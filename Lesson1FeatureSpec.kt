@@ -88,10 +88,14 @@ fun sum2(a: Int, b: Int) = a + b
 
 fun maxOf(a: Int, b: Int) = if (a > b) a else b
 
-fun minOf(x: Long, y: Long): Any {
-    if (x < y) return x
-    return Unit
+fun minOf(vararg: Long): Long {
+    if (vararg < vararg) return vararg {
+    } else {
+        return vararg
+    }
 }
+
+
 
 fun describe(obj: Any): String =
         when (obj) {
@@ -109,3 +113,4 @@ fun count(list: ArrayList<String>): Int {
     }
     return counter
 }
+
